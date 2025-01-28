@@ -80,7 +80,7 @@ var goals = [
     "options": [
 	  "Take Princess Gwaelin to the Dragonlord",
 	  "Buy radishes with Princess Gwaelin in Cantlin",
-	  "Take Princess Gwaelin to dying soldier in Brecconary"},
+	  "Take Princess Gwaelin to dying soldier in Brecconary",
 	  "Take Princess Gwaelin to the Puff Puff woman in Kol",
 	  "Take Princess Gwaelin to 'I hate people' woman in Garinham",
 	  "Take Princess Gwaelin to jealous soldier in Tantagel",
@@ -153,13 +153,11 @@ var generateCard = function(){
   
   var h4Els = document.querySelectorAll('h4');
 
-  var addSelect = function(goal) {
-      goal.addEventListener("click", function() {
-        if(goal.className == "selected"){
-          goal.className = ""
-        }
-        else (goal.className = "selected")
-      });}
+var addSelect = function(goal) {
+  goal.addEventListener("click", function() {
+    goal.classList.toggle("selected");
+  });
+}
 
   h4Els.forEach( addSelect );
 };

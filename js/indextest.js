@@ -54,7 +54,7 @@ const sourceArray = [
     {"name": "Search behind Wyn's counter"},
     {"name": "No Heal/Healmore out of battle"},
     {"name": "Stay at every inn with Princess Gwaelin"},
-	{"name": "Sleep an Axe Knight"},
+    {"name": "Sleep an Axe Knight"},
     "RedDragons", 
     [{"name": "Run from a Red Dragon"}, {"name": "Kill a Red Dragon without using Healmore"},],
     "Wizards",

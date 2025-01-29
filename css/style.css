@@ -11,7 +11,7 @@ body{
   margin: 24px;
   background-image: url('../img/floor.png');
   background-color: #743430;
-  width: 600px;
+  width: 912px;
 }
 
 body > *~*{
@@ -30,8 +30,8 @@ header button{
   margin-right: 24px;
 }
 main{
-  width: 600px;
-  height: 552px;
+  width: 912px;
+  height: 912px;
   color: #211010;
   display: flex;
   flex-wrap: wrap;

@@ -144,6 +144,7 @@ var generateCard = function(){
       // If the goal has multiple options, randomly choose one
       var randomOption = goal.options[Math.floor(Math.random() * goal.options.length)];
       goal.name = randomOption; // Update the goal name with the selected option
+      delete goal.options;
     }
     theCard.innerHTML += '<h4><span>' + goal.name + '</span></h4>';
   });

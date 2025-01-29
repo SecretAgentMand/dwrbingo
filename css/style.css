@@ -11,8 +11,7 @@ body{
   margin: 24px;
   background-image: url('../img/floor.png');
   background-color: #743430;
-  width: 880px;
-  height: 880px;
+  width: 600px;
 }
 
 body > *~*{
@@ -31,34 +30,22 @@ header button{
   margin-right: 24px;
 }
 main{
-  width: 880px;
-  height: 880px;
+  width: 600px;
+  height: 552px;
   color: #211010;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  background: #9cc610 url('../img/TileUndone.png') padding-box padding-box;
+  background: #9cc610 url('../img/back-grass.png') padding-box padding-box;
   border-style: solid;
   border-width: 24px 72px 48px 48px;
-  border-image: url('../img/BoardBorder.png') repeat 24 72 48 48;
-  padding: 0;
-  margin: 0;
+  border-image: url('../img/border.png') repeat 24 72 48 48;
 }
 h4{
-  width: 176px;
-  height: 176px;
-  padding: 0px 0px;
+  width: 96px;
+  height: 96px;
+  padding: 22px 4px;
 }
-
-.main-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 176px); /* 5 columns, each 176px */
-  grid-template-rows: repeat(5, 176px);    /* 5 rows, each 176px */
-  justify-content: center; /* Centers the grid in the middle of the container */
-  align-content: center;   /* Centers the grid vertically */
-  gap: 0;                  /* No space between tiles */
-}
-
 span{
   background-color: #9cc610;
   vertical-align: middle;
@@ -66,7 +53,7 @@ span{
 .selected{
   background-color: #de2939;
   color:#efefe7;
-  background-image: url('../img/TileDone.png');
+  background-image: url('../img/back-red.png');
 }
 .selected span{
   background-color: transparent;

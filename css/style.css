@@ -42,8 +42,8 @@ main{
   border-image: url('../img/BoardBorder.png') repeat 24 72 48 48;
 }
 h4{
-  width: 96px;
-  height: 96px;
+  width: 176px;
+  height: 176px;
   padding: 22px 4px;
 }
 span{

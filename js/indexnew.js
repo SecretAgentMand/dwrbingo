@@ -177,22 +177,24 @@ document.querySelector("#copy").addEventListener("click", copy);
 
 // TEST STUFF BELOW
 document.addEventListener('DOMContentLoaded', function() {
-  const tiles = document.querySelectorAll('.tile');
+	const tiles = document.querySelectorAll('.tile');
 
-	// Left click (regular click) to change to TileDone.png
+	// Left click (regular click) to change to TileDone
 	tiles.forEach(tile => {
 		tile.addEventListener('click', function() {
-			tile.style.backgroundImage = "url('../img/TileDone.png')";
+			// Remove 'highlighted' class (if it exists) and add 'selected' class
+			tile.classList.remove('highlighted');
 			tile.classList.add('selected');
 		});
 	});
 
-	// Right-click (context menu) to change to TileHighlighted.png
+	// Right click (context menu) to change to TileHighlighted
 	tiles.forEach(tile => {
 		tile.addEventListener('contextmenu', function(event) {
 			event.preventDefault(); // Prevent the context menu from appearing
-			tile.style.backgroundImage = "url('../img/TileHighlighted.png')";
-			tile.classList.remove('selected'); // Optionally remove the 'selected' class if desired
+			// Remove 'selected' class (if it exists) and add 'highlighted' class
+			tile.classList.remove('selected');
+			tile.classList.add('highlighted');
 		});
 	});
 });

@@ -174,3 +174,19 @@ function copy() {
 }
 
 document.querySelector("#copy").addEventListener("click", copy);
+
+// TEST STUFF
+theCard.addEventListener('contextmenu', function(event) {
+	// Check if the target is a tile
+	if (event.target.classList.contains('tile')) {
+    // Prevent the default context menu from appearing
+    event.preventDefault();
+    
+    // Toggle between TileUndone and TileHighlighted images
+    if (event.target.style.backgroundImage.includes('TileUndone.png')) {
+      event.target.style.backgroundImage = "url('../img/TileHighlighted.png')";
+    } else {
+      event.target.style.backgroundImage = "url('../img/TileUndone.png')";
+    }
+  }
+});

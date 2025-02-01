@@ -174,29 +174,3 @@ function copy() {
 }
 
 document.querySelector("#copy").addEventListener("click", copy);
-
-// TEST STUFF BELOW
-document.addEventListener('DOMContentLoaded', function() {
-	const theCard = document.getElementById('theCard'); // Assuming this is your main container for tiles
-	const numTiles = 25; // Or however many tiles you want to generate
-
-	// Dynamically create tiles and append them to theCard
-	for (let i = 0; i < numTiles; i++) {
-		const tile = document.createElement('div');
-		tile.classList.add('tile'); // Apply the 'tile' class
-		theCard.appendChild(tile);
-
-		// Left click (regular click) to change to TileDone
-		tile.addEventListener('click', function() {
-			tile.classList.remove('highlighted');
-			tile.classList.add('selected');
-		});
-
-		// Right click (context menu) to change to TileHighlighted
-		tile.addEventListener('contextmenu', function(event) {
-			event.preventDefault(); // Prevent the context menu from appearing
-			tile.classList.remove('selected');
-			tile.classList.add('highlighted');
-		});
-	}
-});

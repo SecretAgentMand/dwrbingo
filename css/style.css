@@ -86,3 +86,21 @@ aside{
 div{
   margin: 1em 0;
 }
+
+.tile {
+  background-color: #9cc610; /* Or whatever default color you want */
+  background-image: url('../img/TileUndone.png');
+  width: 96px;
+  height: 96px;
+  padding: 22px 4px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.tile.selected {
+  background-image: url('../img/TileDone.png');
+}
+
+.tile.highlighted {
+  background-image: url('../img/TileHighlighted.png');
+}

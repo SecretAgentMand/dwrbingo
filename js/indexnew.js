@@ -174,3 +174,25 @@ function copy() {
 }
 
 document.querySelector("#copy").addEventListener("click", copy);
+
+// TEST STUFF BELOW
+document.addEventListener('DOMContentLoaded', function() {
+  const tiles = document.querySelectorAll('.tile');
+
+	// Left click (regular click) to change to TileDone.png
+	tiles.forEach(tile => {
+		tile.addEventListener('click', function() {
+			tile.style.backgroundImage = "url('../img/TileDone.png')";
+			tile.classList.add('selected');
+		});
+	});
+
+	// Right-click (context menu) to change to TileHighlighted.png
+	tiles.forEach(tile => {
+		tile.addEventListener('contextmenu', function(event) {
+			event.preventDefault(); // Prevent the context menu from appearing
+			tile.style.backgroundImage = "url('../img/TileHighlighted.png')";
+			tile.classList.remove('selected'); // Optionally remove the 'selected' class if desired
+		});
+	});
+});

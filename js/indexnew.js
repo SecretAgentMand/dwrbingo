@@ -102,7 +102,7 @@ var goals = [
 	  "Kill a Magidrakee with any Sword equipped",
 	  "Attempt to light up a Wraith with the Stones of Sunlight",
 	  "Kill a Wolf with a shield equipped",
-	  "Kill a Warlock with Leather, Magic Armor, or Erdrick's Armor equipped"] },
+	  "Kill a Warlock with Leather, Magic, or Erdrick's Armor equipped"] },
   { "name": "Dragons",
     "options": [
 	  "Kill a Dragon with a Bamboo Pole",
